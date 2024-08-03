@@ -1,0 +1,26 @@
+/* About.module.css */
+.about {
+  padding: 80px 13%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.aboutImg img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.text h2 {
+  color: #007bff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  color: #829ab1;
+  font-size: 1.1rem;
+  font-weight: 500;
+}

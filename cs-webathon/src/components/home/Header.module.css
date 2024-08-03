@@ -1,0 +1,68 @@
+/* Header.module.css */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 23px 13%;
+  transition: all 0.4s ease;
+}
+
+.logo img {
+  height: auto;
+  width: 160px;
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 22px;
+  transition: all 0.4s ease;
+}
+
+.navbar a:hover {
+  color: #5bc0eb;
+}
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+}
+
+.headerIcons i {
+  margin-left: 10px;
+  font-size: 24px;
+  color: white;
+  transition: all 0.4s ease;
+  margin-right: 15px;
+}
+
+.headerIcons i:hover {
+  transform: scale(1.2);
+  color: #5bc0eb;
+}
+
+.menuIcon {
+  font-size: 34px;
+  color: white;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.sticky {
+  background: #007bff;
+  padding: 12px 13%;
+  box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+}

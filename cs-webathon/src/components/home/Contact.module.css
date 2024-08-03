@@ -1,0 +1,33 @@
+/* Contact.module.css */
+.contact {
+  padding: 80px 13%;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #007bff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contactDetails {
+  list-style: none;
+  padding: 0;
+}
+
+.contactDetails li {
+  margin-bottom: 20px;
+}
+
+.contactDetails strong {
+  display: block;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.contactDetails p {
+  color: #555;
+  font-size: 1.1rem;
+  margin: 5px 0 0;
+}

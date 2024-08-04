@@ -1,25 +1,36 @@
 import React from "react";
 import styles from "./Header.module.css";
-import logo from "./assets/images/logo.png"; // Make sure to have the logo image in the appropriate directory
+import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <img src={logo} alt="Logo" />
-      </div>
-      <nav className={styles.navbar}>
-        <a href="#home">Home</a>
-        <a href="#container">Container</a>
-        <a href="#courses">Courses</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a href="index.html" className={styles.logo}>
+        <img src={logo} alt="ComputingSyndicate" />
+      </a>
+      <ul className={styles.navbar}>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#Courses">Courses</a>
+        </li>
+        <li>
+          <a href="#meet">Meet</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
       <div className={styles.headerIcons}>
-        <i className="fa fa-search"></i>
-        <i className="fa fa-user"></i>
+        <a href="#">
+          <i className="bx bx-user"></i>
+        </a>
+        <div className="bx bx-menu" id={styles.menuIcon}></div>
       </div>
-      <div id="menu-icon" className={`${styles.menuIcon} fa fa-bars`}></div>
     </header>
   );
 };

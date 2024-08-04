@@ -1,33 +1,64 @@
-/* Contact.module.css */
 .contact {
-  padding: 80px 13%;
-  background: #f8f9fa;
-  text-align: center;
+  padding: 90px 13%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  background-image: url("../../assets/images/contact-us.jpg");
+  background-size: 100%;
+  object-fit: cover;
 }
 
-.contact h2 {
-  color: #007bff;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+.contactText h5 {
+  color: var(--main-color);
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
-.contactDetails {
-  list-style: none;
-  padding: 0;
+.contactText h2 {
+  font-size: 36px;
+  color: var(--text-color);
+  margin: 12px 0;
 }
 
-.contactDetails li {
-  margin-bottom: 20px;
+.contactText form {
+  margin-top: 24px;
+  display: grid;
+  gap: 1rem;
 }
 
-.contactDetails strong {
-  display: block;
-  color: #333;
-  font-size: 1.2rem;
+.contactText form input,
+.contactText form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  font-size: var(--p-font);
+  color: var(--text-color);
+  outline: none;
 }
 
-.contactDetails p {
-  color: #555;
-  font-size: 1.1rem;
-  margin: 5px 0 0;
+.contactText form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contactText form .btn {
+  background: var(--main-color);
+  color: var(--bg-color);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.contactText form .btn:hover {
+  transform: scale(1.1);
+}
+
+.contactImg img {
+  width: 100%;
+  border-radius: 20px;
 }

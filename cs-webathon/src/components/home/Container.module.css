@@ -1,6 +1,11 @@
-/* Container.module.css */
+.heading {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
 .container {
-  padding: 80px 13%;
+  padding: 70px 13%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   gap: 1.2rem;
@@ -19,18 +24,17 @@
   transition: all 0.4s ease;
 }
 
-.containerBox:hover {
+.containerBox img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.containerBox:hover img {
   transform: translateY(-15px);
 }
 
-.containerText h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.containerText p {
-  font-size: 1.1rem;
-  color: #829ab1;
+.containerText {
+  font-size: var(--p-font);
+  color: var(--second-color);
   font-weight: 500;
 }

@@ -1,16 +1,21 @@
 import React from "react";
-import styles from "./About.module.css";
-import aboutImage from "./assets/images/about-image.jpg"; // Make sure to have the about image in the appropriate directory
+import styles from "./about.module.css";
+import aboutImg from "../../assets/images/about-us-page.png";
 
 const About = () => {
   return (
     <section className={styles.about} id="about">
       <div className={styles.aboutImg}>
-        <img src={aboutImage} alt="About" />
+        <img src={aboutImg} alt="About Us" />
       </div>
-      <div className={styles.text}>
-        <h2>About Us</h2>
-        <p>This is a description about your company or website.</p>
+      <div className={styles.aboutText}>
+        <h5>About Us</h5>
+        <h2>Why Choose Us?</h2>
+        <p>
+          We are dedicated to providing the best educational content and
+          resources to help you achieve your learning goals. Our courses are
+          designed by industry experts and tailored to meet your needs.
+        </p>
       </div>
     </section>
   );

@@ -1,11 +1,9 @@
-/* About.module.css */
 .about {
-  padding: 80px 13%;
+  padding: 90px 13%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   align-items: center;
-  cursor: pointer;
 }
 
 .aboutImg img {
@@ -13,14 +11,20 @@
   border-radius: 20px;
 }
 
-.text h2 {
-  color: #007bff;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.aboutText h5 {
+  color: var(--main-color);
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
-.text p {
-  color: #829ab1;
-  font-size: 1.1rem;
+.aboutText h2 {
+  font-size: 36px;
+  color: var(--text-color);
+  margin: 12px 0;
+}
+
+.aboutText p {
+  font-size: var(--p-font);
+  color: var(--second-color);
   font-weight: 500;
 }

@@ -1,34 +1,62 @@
 import React from "react";
 import styles from "./Courses.module.css";
+import courseImg from "../../assets/images/dsa.png";
 
 const Courses = () => {
   return (
-    <section className={styles.courses} id="courses">
+    <section className={styles.courses}>
       <div className={styles.centerText}>
-        <h5>Our Courses</h5>
-        <h2>Choose the Best Course for You</h2>
+        <h5>Courses</h5>
+        <h2>Explore Popular Courses</h2>
       </div>
+
       <div className={styles.coursesContent}>
         <div className={styles.row}>
-          <img src="../images/course1.jpg" alt="Course 1" />
-          <div className={styles.coursesText}>
-            <h5>Course Title 1</h5>
-            <p>Description for course 1.</p>
-          </div>
+          <img src={courseImg} alt="DSA" />
+          <h4>Data Structures & Algorithms</h4>
+          <p>For absolute beginners.</p>
+          <h6>
+            ₹0 <span>₹180</span>
+          </h6>
+          <a href="#" className={styles.btn}>
+            Enroll Now
+          </a>
         </div>
+
         <div className={styles.row}>
-          <img src="../images/course2.jpg" alt="Course 2" />
-          <div className={styles.coursesText}>
-            <h5>Course Title 2</h5>
-            <p>Description for course 2.</p>
-          </div>
+          <img src={courseImg} alt="Python" />
+          <h4>Python Masterclass</h4>
+          <p>For absolute beginners.</p>
+          <h6>
+            ₹0 <span>₹180</span>
+          </h6>
+          <a href="#" className={styles.btn}>
+            Enroll Now
+          </a>
         </div>
+
         <div className={styles.row}>
-          <img src="../images/course3.jpg" alt="Course 3" />
-          <div className={styles.coursesText}>
-            <h5>Course Title 3</h5>
-            <p>Description for course 3.</p>
-          </div>
+          <img src={courseImg} alt="ML" />
+          <h4>Machine Learning</h4>
+          <p>For absolute beginners.</p>
+          <h6>
+            ₹0 <span>₹180</span>
+          </h6>
+          <a href="#" className={styles.btn}>
+            Enroll Now
+          </a>
+        </div>
+
+        <div className={styles.row}>
+          <img src={courseImg} alt="Frontend" />
+          <h4>Frontend Development</h4>
+          <p>For absolute beginners.</p>
+          <h6>
+            ₹0 <span>₹180</span>
+          </h6>
+          <a href="#" className={styles.btn}>
+            Enroll Now
+          </a>
         </div>
       </div>
     </section>

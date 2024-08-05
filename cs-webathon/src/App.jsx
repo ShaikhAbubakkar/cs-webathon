@@ -1,23 +1,20 @@
-import React from "react";
-import Header from "./components/home/Header";
-import Home from "./components//home/Home";
-import Container from "./components/home/Container";
-import Courses from "./components/home/Courses";
-import About from "./components/home/about";
-import Contact from "./components/home/Contact";
-import "./App.css"; // Global styles
+import React from 'react';
+import Header from './components/Header';
+import Home from './components/Home';
+import Courses from './components/Courses';
+import About from './components/About';
+import Contact from './components/Contact';
 
-const App = () => {
+function App() {
   return (
     <div>
       <Header />
       <Home />
-      <Container />
       <Courses />
       <About />
       <Contact />
     </div>
   );
-};
+}
 
 export default App;

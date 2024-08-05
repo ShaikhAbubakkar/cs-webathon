@@ -1,0 +1,23 @@
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contact h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.contact p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0 auto;
+  max-width: 600px;
+}

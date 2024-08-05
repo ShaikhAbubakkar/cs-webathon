@@ -1,25 +1,42 @@
-:root {
-  --bg-color: #e3f2fd; /* Very light blue */
-  --text-color: white; /* Very dark blue */
-  --second-color: #829ab1; /* Muted blue-gray */
-  --main-color: #5bc0eb; /* Light vibrant blue */
-  --accent-color: #3a7ca5; /* Slightly darker blue for accents */
-  --big-font: 3.8rem;
-  --h2-font: 2.6rem;
-  --p-font: 1.1rem;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: white;
-  color: black;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }

@@ -1,0 +1,66 @@
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/background-image.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .home img {
+    height: fit-content;
+  }
+  
+  .home-text h1 {
+    color: var(--text-color);
+    font-size: 44px;
+    margin: 15px 0 15px;
+  }
+  
+  .home-text h6 {
+    color: var(--main-color);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  
+  .home-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin-bottom: 48px;
+  }
+  
+  .latter form {
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+  }
+  
+  .latter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    padding: 16px 140px 16px 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+  }
+  
+  .latter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    padding: 16px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    top: 2px;
+    right: 1px;
+  }
+  

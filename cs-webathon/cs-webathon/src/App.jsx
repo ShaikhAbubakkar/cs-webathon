@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Courses from './components/Courses';
 import About from './components/About';
 import Contact from './components/Contact';
+// import JitsiMeetWithNotepad from './components/JitsiMeetWithNotepad';
 
 function App() {
   return (
